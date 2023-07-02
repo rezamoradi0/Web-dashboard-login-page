@@ -31,7 +31,7 @@ class Input extends Component {
           placeholder={this.props.PlaceHolder}
         />
         {this.haveRightIcon ? (
-          <i className={"input-icon " + this.props.RightIcon + (!this.state.passShow?"":" small")}  onMouseDown={ this.showThePassword} onMouseUp={ this.showThePassword} onMouseLeave={this.state.passShow? this.showThePassword:null}> </i>
+          <i className={"input-icon " + this.props.RightIcon + (!this.state.passShow?"":" small")}  onMouseDown={ this.showThePassword} onMouseUp= {this.state.passShow? this.showThePassword:null} onMouseLeave={this.state.passShow? this.showThePassword:null}> </i>
         ) : (
           <i></i>
         )}

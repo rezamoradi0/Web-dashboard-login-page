@@ -6,7 +6,7 @@ class LoginForm extends Component {
   render() {
     return (
       <div className="login-form">
-        <Welcome />
+        <Welcome header="Welcome Back !" text="Hi My dear friend welcome back , login"/>
         <Input
         Name="email"
           LeftIcon="fa-regular fa-envelope"

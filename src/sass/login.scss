@@ -27,10 +27,7 @@ border-start-end-radius: 10px;
 }
 
 }
-.login-info{
-    width:40%;
-    background-color:lighten($color:  #ced4d9, $amount: 12);
-}
+
 .welcome-message{
 
 }
@@ -105,7 +102,7 @@ border-start-end-radius: 10px;
             
          
             border: 1px solid  rgb(177, 177, 177);
-            border-bottom:  2px solid  rgb(177, 177, 177);;
+            //border-bottom:  2px solid  rgb(177, 177, 177);;
         }
         i{
             transition: all 300ms;
@@ -158,5 +155,79 @@ border-start-end-radius: 10px;
     a{
         color: royalblue;
         text-decoration: none;
+    }
+}
+
+///////////////////////////////////////////////////////////
+/// 
+/// 
+/// 
+/// ////////
+.login-info{
+    border-start-start-radius: 12px;
+    border-end-start-radius: 12px;
+    width:40%;
+    background-color:lighten($color:  #ced4d9, $amount: 12);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    &>*{
+        width: 80%;
+    }
+    .sliders-holder{
+        height: 100%;
+    }
+}
+.slider-changer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    i{
+        font-size: 6px;
+        margin: auto 4px;
+
+    }
+    .changer{
+        font-size: 12px;
+        margin: auto 30px;
+    }
+}
+
+.the-slider{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .the-slider-body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .the-slider-subject{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+    .the-slider-center{
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        width: 10px;
+        height: 10px;
     }
 }
