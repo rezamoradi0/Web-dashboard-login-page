@@ -1,0 +1,335 @@
+@font-face {
+  font-family: NovaSans;
+  src: url("./../fonts/NoveoSans-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: JetBrains;
+  src: url("./../fonts/JetBrainsMono-2.242/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+}
+input {
+  font-family: "JetBrains";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "NovaSans";
+}
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #ced4d9;
+  padding: 80px 150px;
+}
+
+.login-form {
+  background-color: #f8f8f8;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-end-end-radius: 20%;
+  border-start-end-radius: 10px;
+}
+.login-form > * {
+  width: 45%;
+}
+
+.spliter {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  color: #777;
+}
+.spliter .or {
+  margin: auto 10px;
+}
+.spliter .line {
+  height: 1px;
+  background-color: rgb(156, 156, 156);
+  width: 50%;
+}
+
+.login-input {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  justify-content: space-between;
+  padding: 0px 10px;
+  padding-right: 0px;
+  background-color: #ebeff7;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.login-input .input-icon {
+  height: 80%;
+  margin: 5px 10px;
+  margin-left: 0px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  color: royalblue;
+  aspect-ratio: 1/1;
+  transition: all 500ms;
+  text-align: center;
+}
+.login-input .input-icon.small {
+  color: black;
+  font-size: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.login-input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 34px;
+  font-size: 13px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 12px;
+  margin: 10px 0px;
+}
+.btn.btn-left, .btn.btn-right {
+  width: 45%;
+  background-color: transparent;
+  font-size: 14px;
+  border: 1px solid rgb(212, 212, 212);
+  box-shadow: 1px 1px 1px #cdcdcd;
+}
+.btn.btn-left:hover, .btn.btn-right:hover {
+  border: 1px solid rgb(177, 177, 177);
+}
+.btn.btn-left i, .btn.btn-right i {
+  transition: all 300ms;
+  margin: auto 10px;
+  font-size: 18px;
+}
+
+.red {
+  color: rgb(240, 59, 4);
+}
+
+.blue {
+  color: rgb(21, 93, 247);
+}
+
+.btn-center {
+  background-color: rgb(0, 102, 254);
+  color: #f1f2f1;
+  font-size: 15px;
+  border: 1px solid rgb(90, 152, 245);
+  box-shadow: 0px 3px 5px rgb(131, 177, 209);
+}
+.btn-center:hover {
+  background-color: rgb(1, 88, 219);
+  box-shadow: 1px 1px 3px rgb(51, 107, 147);
+}
+
+.div-septator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-message {
+  height: 125px;
+  margin-bottom: 30px;
+}
+.welcome-message p:first-of-type {
+  font-size: 2.1rem;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  width: 75%;
+}
+.welcome-message p:last-of-type {
+  color: #777;
+  margin-top: 10px;
+  text-wrap: wrap;
+  max-width: 100%;
+}
+
+.have-not-account {
+  margin-top: 10px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+.have-not-account a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.login-info {
+  border-start-start-radius: 12px;
+  border-end-start-radius: 12px;
+  width: 40%;
+  background-color: #f0f2f4;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+.login-info > * {
+  width: 80%;
+}
+.login-info .sliders-holder {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: 1px;
+}
+
+.slider-changer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-changer > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-changer i {
+  font-size: 6px;
+  margin: auto 4px;
+}
+.slider-changer .changer {
+  font-size: 12px;
+  padding: 30px;
+}
+
+.the-slider {
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.the-slider .the-slider-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.the-slider .the-slider-subject {
+  position: absolute;
+  left: 0px;
+  border-bottom: 1px solid black;
+  top: 10px;
+}
+.the-slider .the-slider-center {
+  border-radius: 50%;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.the-slider .the-slider-object {
+  display: flex;
+  width: 120px;
+  aspect-ratio: 1/1;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 500ms;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.the-slider .the-slider-object.top-object {
+  left: 0px;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.the-slider .the-slider-object.right-object {
+  left: 30px;
+  transform: translateY(-50%);
+}
+.the-slider .the-slider-object.left-object {
+  right: 30px;
+  transform: translateY(-10%);
+}
+
+.circle-progress {
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 50;
+  overflow: hidden;
+}
+.circle-progress .circle-center-hidener {
+  background-color: #fff;
+  position: relative;
+  color: black;
+  border-radius: 50%;
+  width: 60%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 55;
+}
+.circle-progress .clip-path {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: #f85d5d;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+  z-index: 54;
+}
+.circle-progress .clip-path2 {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: #8c5df8;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+          clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+  z-index: 53;
+  transform: rotate(315deg);
+  transform-origin: left bottom;
+}
+.circle-progress .clip-path3 {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: #5df867;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+  z-index: 52;
+  transform: rotate(120deg);
+  transform-origin: left bottom;
+}
+.circle-progress .gary {
+  color: #777;
+  font-size: 10px;
+}/*# sourceMappingURL=login.css.map */
